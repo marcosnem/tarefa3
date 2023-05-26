@@ -20,15 +20,15 @@ const Home = () => {
     </section> 
     <div className='text-center justify-end'>
     <p className='text-center text-3xl med:text-4xl lg:text-5xl font-semibold text-yellow-400 py-4'>Escolha qual perfil deseja se cadastrar na plataforma</p>
-    <a href='/Profi'>
-    <button className='bg-red-100 border border-yellow-400 font-bold rounded text-primary text-lg px-4 py-1 mb-4' >Profissional</button>
-    </a>
-    <a href='/Emp'>
+   
+    <button onClick={() => navigate('/Profi')} className='bg-red-100 border border-yellow-400 font-bold rounded text-primary text-lg px-4 py-1 mb-4' >Profissional</button>
+   
+    
     <button onClick={() => navigate('/Emp')} className='bg-red-100 border border-yellow-400 font-bold rounded text-primary text-lg px-4 py-1 mb-4'>Empresa</button>
-    </a>
-    <a href='/Cli'>
-    <button onClick={() => navigate('/Cli')} className='bg-red-100 border border-yellow-400 font-bold rounded text-primary text-lg px-4 py-1 mb-4'>Cliente</button>
-    </a>
+    
+    
+    <button onClick={() => navigate('/Clie')} className='bg-red-100 border border-yellow-400 font-bold rounded text-primary text-lg px-4 py-1 mb-4'>Cliente</button>
+    
     </div>
     <section><p><a href="https://copyrightservice.net/pt/copyright_notice" title="Avisos de direitos autorais">Avisos de direitos autorais</a> - Serviços Internacionais Direitos do Autor  (ICS)</p></section>
  </>

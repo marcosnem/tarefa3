@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../../assets/logo.jpg'
 
-const Cliente = () => {
+const Clie = () => {
   return (
     <main className='h-screen w-full banner'>
     <div className='flex flex-col items-center pt-20 h-screen w-full'>
@@ -41,4 +41,4 @@ const Cliente = () => {
   )
 }
 
-export default Cliente
+export default Clie;
