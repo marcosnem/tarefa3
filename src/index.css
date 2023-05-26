@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+.home-banner {
+  background-image: url('../src/assets/background.jpg') ;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+}
+
+.bg-primary {
+  background-color: rgb(200, 190, 48);
+}
