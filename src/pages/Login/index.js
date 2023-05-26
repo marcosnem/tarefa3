@@ -1,6 +1,8 @@
 import React from 'react'
-import { useState } from 'react'
 import logo from '../../assets/logo.jpg'
+import { useNavigate } from 'react-router-dom'
+import { AuthContext } from '../../context/AuthContext'
+import { useContext, useState } from 'react'
 
 const Login = () => {
   
@@ -8,6 +10,12 @@ const Login = () => {
     email:'',
     senha:''
   })
+
+  const { loginUser } = useContext(AuthContext);
+  
+  // para redirecionar a pagina
+  const navigate = useNavigate(); 
+
 
   const handleChangeValues = (evento) => {
   
@@ -22,7 +30,7 @@ const Login = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // loginUser(inputValues);
+    loginUser(inputValues);
     
   }
 

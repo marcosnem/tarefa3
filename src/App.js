@@ -7,10 +7,14 @@ import Emp from './components/Emp';
 import NotFound from './pages/NotFound';
 import Login from './pages/Login'
 import Clie from './components/Clie';
+import Consulta from './components/Consulta'
+import { AuthProvider } from './context/AuthContext';
+import ProtectedRoute from './routes/ProtectedRoute';
 
 function App() {
   return (
 <>
+<AuthProvider>
 <NavBar/>
 <Routes>
   <Route path='/' element={<Home/>}/>
@@ -18,8 +22,17 @@ function App() {
   <Route path='/Profi' element={<Profi/>}/>
   <Route path='/Emp' element={<Emp/>}/>
   <Route path='/Clie' element={<Clie/>}/>
+
+    
+  <Route path='/Consulta' element={
+  <ProtectedRoute>
+  <Consulta/>
+  </ProtectedRoute>
+  }/>
+
   <Route path='/*' element={<NotFound/>}/>
 </Routes>
+</AuthProvider>
 </>    
 
   );

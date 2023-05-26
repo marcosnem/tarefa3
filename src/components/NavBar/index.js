@@ -14,7 +14,7 @@ const NavBar = () => {
         </div>
         <div className='flex items-center justify-end space-x-6'>
     <button onClick={() => navigate('/')}>Home</button>
-    <button>Consulta</button>
+    <button onClick={() => navigate('/Consulta')}>Consulta</button>
     {/* <button className='bg-primary px-6 text-white rounded-full transition duration-700 hover:scale-105'>Cadastro</button> */}
     <button onClick={() => navigate('/login')}>Login</button>
     </div>
