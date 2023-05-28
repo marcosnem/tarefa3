@@ -14,9 +14,9 @@ const Consulta = () => {
             <input 
             type="text" placeholder="Nome/Razão" name="email" className="w-full px-4 py3 rounded-lg ring-red-200 border border-gray-300 focus:outline-none transition duration-300"
             /></label>
-            <label>Seguimento/Nicho/Área 
+            <label>Serviços 
             <input 
-            type="email" placeholder="área" name="email" className="w-full px-4 py3 rounded-lg ring-red-200 border border-gray-300 focus:outline-none transition duration-300"
+            type="text" placeholder="serviços que deseja" name="servi-emp-profi" className="w-full px-4 py3 rounded-lg ring-red-200 border border-gray-300 focus:outline-none transition duration-300"
             /></label>
             </div> 
             <button type="submit" className="w-full py-3 bg-yellow-300 text-black-300 focus:outline-none focus:ring-4 mt-6 rounded-lg transition duration-300">Buscar</button>

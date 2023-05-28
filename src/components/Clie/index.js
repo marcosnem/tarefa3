@@ -12,9 +12,9 @@ const Clie = () => {
             <input 
             type="text" placeholder="Nome completo" name="email" className="w-full px-4 py3 rounded-lg ring-red-200 border border-gray-300 focus:outline-none transition duration-300"
             /></label>
-            <label>Profissão
+            <label>Serviços de interesse
             <input 
-            type="text" placeholder="Nome completo" name="profissao" className="w-full px-4 py3 rounded-lg ring-red-200 border border-gray-300 focus:outline-none transition duration-300"
+            type="text" placeholder="serviços" name="servi-clie" className="w-full px-4 py3 rounded-lg ring-red-200 border border-gray-300 focus:outline-none transition duration-300"
             /></label>
             <label>Endereço
             <input 
